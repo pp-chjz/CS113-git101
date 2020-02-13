@@ -1,0 +1,19 @@
+mkdir myapp ->ใช้สร้าง directoryชื่อmyapp
+dir ->ดูรายการ directories และ files ใน working directory ปัจจุบัน
+
+git --version ->ดูversionของgit
+git status ->ตรวจสอบสถานะของไฟล์
+git add #ชื่อไฟล์พร้อมนามสกุล ->เพิ่มไฟล์เข้า staging area เพื่อพร้อมจะ commit 
+
+**หลังgit add แนะนำให้ git status เช็คทุกครั้ง
+
+git config user.name "Your Name"
+git config user.email "yourmail@ku.th" -> ตั้งค่าชื่อและอีเมลเพื่อระบุตัวผู้ commit
+
+
+**ใส่--global ด้วยถ้าเป็นเครื่องส่วนตัว และทำครั้งเดียว
+
+git commit -m "Checkpoint"->Commit ไฟล์ดป็น Checkpoint
+
+
+git log --all --decorate --oneline --graph ->ดู checkpoint
