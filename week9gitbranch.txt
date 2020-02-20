@@ -1,0 +1,17 @@
+git branch <branch-name> -> สร้าง branch
+git branch -> ตรวจสอบว่ามี Branch อะไรบ้าง
+
+** จะมี * อยู่นำหน้าชื่อ Branch ที่กำลังทำอยู่ในปัจจุบัน
+
+git log --all --decorate --oneline --graph -> จะมี2branches 
+
+git merge feature ->รวม Branch (merge) feature ให้ไปอยู่ใน masterหรือที่เราเลือกไว้
+
+เมื่อ merge แล้ว จะเห็นว่ามีไฟล์ ที่เราเพิ่มในbranch อยู่ใน Branch master
+
+การ Pull แบบไม่มี Conflict คือไม่ได้แก้ในไฟล์เดียวกันในแต่ละ branch จึงไม่มี conflict 
+
+การ Merge แบบมี Conflict เกิดจากการปรับแก้ไขข้อมูลในไฟล์เดิม บรรทัดเดิม ที่อยู่ต่าง Branch กัน
+เมื่อ merge แล้ว git ตัดสินใจไม่ได้ว่าจะใช้ข้อมูลจาก branch ใด
+
+ถ้ามี tool ที่ช่วยจัดการ conflict เช่น Atom สามารถเลือกว่าจะใช้ข้อมูลจาก branch ใด
